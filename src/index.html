@@ -1,0 +1,46 @@
+<!-- July 2019 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/journal.css">
+  <title>Kelly's Daily journal</title>
+
+</head>
+
+<body>
+
+  <h1>Daily Journal</h1>
+  <form>
+    <fieldset>
+        <label for="journal_date">Date:</label>
+      <input type="date">
+    </fieldset>
+    <fieldset class="concepts">
+
+      <label for="concepts_covered">Concepts Covered:</label>
+        <input type="text">
+    </fieldset>
+    <fieldset>
+      <label for="concept_details">Details:</label>
+      <textarea name="details" cols="20" rows="4"></textarea>
+    </fieldset>
+    <fieldset>
+      <label for="mood">How do I feel?</label>
+      <select class="mood" name="mood">
+        <option value="5" selected="selected">super excited</option>
+        <option value="4">a little excited</option>
+        <option value="3">eh</option>
+        <option value="2">sad</option>
+        <option value="1">super stressed</option>
+      </select>
+    </fieldset>
+    <input type="submit" name="submit" class="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+html{
+    background-color: aqua;
+}
+h1 {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 3em;
+  }
+   
+  fieldset {
+  display: flex;
+  flex-direction: column;
+  }
