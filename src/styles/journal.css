@@ -1,13 +1,45 @@
-html{
-    background-color: aqua;
-}
-h1 {
-    text-align: center;
-    margin: 30px auto;
-    font-size: 3em;
+body {
+    background-color :#f5f5f5;
+    padding: 20px 50px;
+  }
+  h4 {
+    color: #cd0000;
+    font-size: 42px;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+  .list {
+    color: #555;
+    font-size: 22px;
+    padding: 0 ;
+    font-family: courier, monospace;
+    border: 1px solid #dedede;
+    position: relative;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);   
+  }
+  .list li {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 10px 5px 10px 50px;
+    text-transform: capitalize;
+  }
+  .list li:hover {
+    background-color: #eee;
+
+  }
+  .list li:last-child {
+    border-bottom: 0;
+  }
+  .list:before {
+    content: "";
+    border-left: 1px solid #ffaa9f;
+    border-right: 1px solid #ffaa9f;
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 25px;
   }
    
-  fieldset {
-  display: flex;
-  flex-direction: column;
-  }
