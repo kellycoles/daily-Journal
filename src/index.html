@@ -2,47 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/journal.css">
-    <title>Kelly&apos;s Journal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/journal.css">
+  <title>Kelly&apos;s Journal</title>
 </head>
 
 <body>
-    <form action="">
-        <ul class="list">
-            <li>
-                <h4>Kelly&apos;s Daily Journal</h4>
-            </li>
-            <li>
-                <label for="journalDate">Date:</label>
-                <input type="date" name="journalDate" id="journalDate">
-            </li>
-            <li>
-                <label for="conceptsCovered">Concepts:</label>
-                <input type="text" name="journalConcepts" id="journalConcepts">
-            </li>
-            <li class="formfield">
-                <label for="conceptDetails">Details:</label>
-                <textarea rows="3" cols="40" name="conceptDetails" id="conceptDetails"></textarea>
-            </li>
-            <li><label for="mood">Feelings:</label>
-                <select class="mood" name="mood">
-                    <option value="no selection"></option>
-                    <option value="5">Super Excited</option>
-                    <option value="4">Really Good</option>
-                    <option value="3">Pretty Good</option>
-                    <option value="2">Overwhelmed</option>
-                    <option value="1">Super Stressed</option>
-                </select>
-            </li>
-            <li>
-                <input type="submit" name="submit" class="submit" value="Submit">
-            </li>
-        </ul>
-    </form>
+  <form action="">
+    <div>
+      <ul class="list">
+        <li>
+          <h4>Kelly&apos;s Daily Journal</h4>
+        </li>
+        <li>
+          <label for="journalDate">Date:</label>
+          <input type="date" value="" name="journalDate" id="journalDate" value="">
+        </li>
+        <li>
+          <label for="conceptsCovered">Concepts:</label>
+          <input type="text" class="custom" name="journalConcepts" id="journalConcepts">
+        </li>
+        <li>
+          <label for="conceptDetails">Details:</label>
+          <textarea class="custom" rows="4" cols="40" name="conceptDetails" id="conceptDetails"></textarea>
+        </li>
+        <li><label for="mood">Feelings:</label>
+          <select class="mood custom" name="mood">
+            <option value="no selection"></option>
+            <option value="5">Super Excited</option>
+            <option value="4">Really Good</option>
+            <option value="3">Pretty Good</option>
+            <option value="2">Overwhelmed</option>
+            <option value="1">Super Stressed</option>
+          </select>
+        </li>
+        <li>
+          <input type="submit" name="submit" class="submit" value="Submit Entry">
+        </li>
+      </ul>
+    </div>
+  </form>
 </body>
 
 </html>
