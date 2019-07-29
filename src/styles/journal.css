@@ -130,3 +130,13 @@ textarea {
 .custom {
   cursor: url(../images/pencil-2.png), auto;
 }
+
+/* =======================================================
+  Style HTML Component text: output
+===========================================================*/
+.journalEntry{
+  /* font-family: courier, monospace; */
+   /* google font */
+   font-family: 'Architects Daughter', cursive;
+  font-size: 1.2em;
+}

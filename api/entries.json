@@ -1,0 +1,100 @@
+{
+    "entries": [
+        {
+            "date": "07/10/2019",
+            "concept": " Git, GitHub, Flexbox, and Teamwork",
+            "entry": "Used the aforementioned technologies to build a website with 3 other team members",
+            " mood": "super excited"
+        },
+        {
+            "date": "07/12/2019",
+            "concept": " querySelector() and querySelectorAll()",
+            "entry": "book 2 chapter 1: Practiced using querySelector() and querySelectorAll() to add and remove classes from the DOM",
+            "mood": "pretty good"
+        },
+        {
+            "date": "07/12/2019",
+            "concept": "object and array manipulation",
+            "entry": "book 2 chapter 2: Practiced extracting and manipulatind data in objects and arrays.",
+            "mood": "pretty good"
+        },
+        {
+            "date": "07/13/2019",
+            "concept": "Daily Journal",
+            "entry": "Weekend: worked on styling my journal and learned some cool css tricks. I love styling!",
+            "mood": "super excited"
+        },
+        {
+            "date": "07/15/2019",
+            "concept": "Functions",
+            "entry": "Learned about pure and impure functions. Worked more with template literals. Did several exercises ",
+            "mood": "pretty good"
+        },
+        {
+            "date": "07/16/2019",
+            "concept": "More Functions",
+            "entry": "Began the day with lightning exercises Finished book 2 chapter 4. Did several exercises ",
+            "mood": "pretty good"
+        },
+        {
+            "date": "07/17/2019",
+            "concept": "Objet Oriented Programming",
+            "entry": "Book 2 chapter 6 and 7. Learned about objects representing things, and building DOM components",
+            "mood": "pretty good"
+        },
+        {
+            "date": "07/18/2019",
+            "concept": "Json",
+            "entry": "Book 2 chapter 9: the content didn't seem too hard to understand, but computer problem made me miss the lesson",
+            "mood": "super stressed"
+        },
+        {
+            "date": "07/19/2019",
+            "concept": "Fetch",
+            "entry": "Book 2 chapter 10: the content didn't seem too hard to understand, but computer problem made me miss the lesson",
+            "mood": "Wanna Cry"
+        },
+        {
+            "date": "07/22/2019",
+            "concept": "Group Project: Fetching Data",
+            "entry": "Not a sprint, but a dash. Worked with two other team members. We built a web site that retreived data via fetch and displayed blog entries, images, and a list of to do's. I like group projects because it helps me realize that I'm not alone in feeling like I don't know what I'm doing. Plus, I always learn.",
+            "mood": "super excited"
+        },
+        {
+            "date": "07/23/2019",
+            "concept": "Event Listeners",
+            "entry": "Book 2: Chapter 12. class goes too fast sometimes. I feel dumb because I can't keep up. I got behind on Fetch homework because of the computer problem so I didn't work on event listeners in class. I worked on them at home and I had a hard time. I should know how to write event listeners because I have prior knowledge of them. Days like this make me feel like I'm not smart enough to do this" ,
+            "mood": "super stressed"
+        },
+        {
+            "date": "07/24/2019",
+            "concept": "Capturing User Input",
+            "entry": "Book 2: Chapter 13. Still behind...it's been such a bad week. Jenna gave me a pep talk. She knows I'm a flight risk, so she keeps an eye on me. She knows what we're going through because she went through it, too. She's awsome! ",
+            "mood": "Wanna Cry"
+        },
+        {
+            "date": "07/25/2019",
+            "concept": "Modules",
+            "entry": "Book 2: Chapter 13. The concept is logical but then we started applying it in class. I'm tired from staying up too late catching up on home work. Again, I can't keep up in class. Thank God saved by a visitor talk! Alumni came to talk to us about the importance of networking. ",
+            "mood": "Super Stressed"
+        },
+        {
+            "date": "07/26/2019",
+            "concept": "Group Project",
+            "entry": "Welcome to Nashville project. I'm on a team with two other people. We're applying everything we've learned so far. API's, inputs, event listeners, factory functions, modules. We're building a Web site that uses 3 API's to import data, and outputing results based on what the user selects. Each of us is responsible for a page. I'm nervous because I'm unclear on some of the concepts I'm using but I'm also excited because I'm learning a lot. I'm feeling much better.",
+            "mood": "Pretty Good"
+        },
+        {
+            "date": "07/28/2019",
+            "concept": "Weekend",
+            "entry": " I worked ALL weekend on my part of the project and I still didn't figure it out. I'm so close, but so far away. I stoped trying to solve the problem and began to style the site because I was spinning my wheels and not getting anywhere. It may not work but it looks good! I think I'm really close so hopefully someone at school can help me tomorrow. I'm trying to have a better attitude. If I can't figure somtthing out, it doesn't mean I'm dumb. It just means I have more to learn.Got caught up on my homework!",
+            "mood": "Super Excited"
+        }
+        {
+            "date": "07/29/2019",
+            "concept": "Group Project",
+            "entry": "Welcome to Nashville project",
+            "mood": "Pretty Good"
+        }
+    ]
+}

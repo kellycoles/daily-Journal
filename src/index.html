@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/journal.css">
-    <title>Kelly&apos;s Journal</title>
+  <link rel="stylesheet" href="styles/journal.css">
+  <title>Kelly&apos;s Journal</title>
 </head>
 
 <body>
-  <form id = "journal" name = journal action = "myEntries.html" method="GET">
+  <form id="journal" name=journal action="myEntries.html" method="GET">
     <div>
       <ul class="list">
         <li>
@@ -33,11 +33,11 @@
         <li><label for="mood">Feelings:</label>
           <select class="mood custom" name="mood">
             <option value="no selection"></option>
-            <option value="5">Super Excited</option>
-            <option value="4">Really Good</option>
-            <option value="3">Pretty Good</option>
-            <option value="2">Overwhelmed</option>
-            <option value="1">Super Stressed</option>
+            <option value="1">Super Excited</option>
+            <option value="2">Pretty Good</option>
+            <option value="3">Overwhelmed</option>
+            <option value="4">Super Stressed</option>
+            <option value="5">Wanna Cry</option>
           </select>
         </li>
         <li>
@@ -46,9 +46,11 @@
       </ul>
     </div>
   </form>
-  <!-- <article class="entryLog"></article> -->
-  <script src="scripts/entries.js" ></script>
-  <script src="scripts/journal.js" ></script>
+  <article class="entryLog"></article>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/factory.js"></script>
+  <script src="scripts/dom.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
