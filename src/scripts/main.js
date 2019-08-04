@@ -8,3 +8,4 @@ getJournalData().then((parsedEntries) => {
 //===================================================================
 // make placeholder date default to current date
 document.querySelector("#journalDate").valueAsDate = new Date();
+
