@@ -1,8 +1,10 @@
-//===================================================================
-// make placeholder date default to current date
+
+/*==================================================================
+    Main application logic that uses the functions and objects
+    defined in the other JavaScript files. 
+ ===================================================================*/
+ // sets date to current date
 document.querySelector("#journalDate").valueAsDate = new Date();
-// Reference DOM elements
-const journalDate= document.querySelector("#journalDate")
-const journalConcepts = document.querySelector("#journalConcepts")
-const conceptDetails = document.querySelector("#conceptDetails")
-const mood = document.querySelector("#mood")
+
+//Do something with entries
+API.getJournalData().then((parsedEntries) => {journalEntry.sendToFactory(parsedEntries)})
