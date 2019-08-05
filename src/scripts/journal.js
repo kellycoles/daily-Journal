@@ -8,24 +8,25 @@
  //Do something with entries
  API.getJournalData().then((parsedEntries) => {journalEntry.sendToFactory(parsedEntries)})
 
- const createEntryObject = (date, concepts, details, mood) => {
+ const createEntryObject = (date, concepts, entry, mood) => {
     return {
         "date": date.value,
-        "concepts": concepts.value,
-        "details": details.value,
+        "concept": concepts.value,
+        "entry": entry.value,
         "mood": mood.value
     }
 
 }
 
 
-submit.addEventListener("click", () => {
+submit.addEventListener("click", (event) => {
+event.preventDefault()
     console.log("click")
-    const newJournalEntry = createEntryObject(journalDateInput, journalConceptInput, conceptDetailsInput, moodInput)
+    const newJournalEntry = createEntryObject(journalDateInput, journalConceptInput, conceptEntryInput, moodInput)
     API.saveJournalEntries(newJournalEntry)
-    
-    journalConceptsInput.value = ""
-    conceptDetailsInput.value = ""
+    journalDateInput.valueAsDate = new Date();
+    journalConceptInput.value = ""
+    conceptEntryInput.value = ""
     moodInput.value = ""
 
 })

@@ -2,11 +2,11 @@
 
 // Reference DOM elements
 const journalDateInput= document.querySelector("#journalDate")
-const journalConceptsInput = document.querySelector("#journalConcepts")
-const conceptDetailsInput = document.querySelector("#conceptDetails")
-const moodInput = document.querySelector("#mood")
+const journalConceptInput = document.querySelector("#journalConcepts")
+const conceptEntryInput = document.querySelector("#conceptDetails")
+const moodInput = document.querySelector(".mood")
 const entryLogOutput = document.querySelector("#entryLog")
-const submit = document.querySelector(".submit")
+const submit = document.querySelector("#submit")
 
 const journalEntry = {
     sendToFactory(parsedEntries) {
