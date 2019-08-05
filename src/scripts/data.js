@@ -9,9 +9,18 @@
 
 const API = {
     getJournalData() {
-        return fetch("http://localhost:3000/entries")// Fetch from the API
-            .then(response => response.json()) // Parse as JSON
-            
+        return fetch("http://localhost:3000/entries") // Fetch from the API
+            .then(response => response.json())        // Parse as JSON
+
+    },
+
+    saveJournalEntries(entryObject) {
+        return fetch("http://localhost:3000/entries", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(entryObject)
+        })
     }
 }
-
