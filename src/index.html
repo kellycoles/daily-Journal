@@ -12,46 +12,48 @@
 </head>
 
 <body>
-  <form id="journal" name=journal >
-    <div>
-      <ul class="list">
-        <li>
-          <h4>Kelly&apos;s Daily Journal</h4>
-        </li>
-        <li>
-          <label for="journalDate">Date:</label>
-          <input type="date" value="" name="journalDate" id="journalDate">
-        </li>
-        <li>
-          <label for="conceptsCovered">Concepts:</label>
-          <input type="text" class="custom" name="journalConcepts" id="journalConcepts">
-        </li>
-        <li>
-          <label for="conceptDetails">Details:</label>
-          <textarea class="custom" rows="4" cols="40" name="conceptDetails" id="conceptDetails"></textarea>
-        </li>
-        <li><label for="mood">Feelings:</label>
-          <select class="mood custom" name="mood">
-            <option value="no selection"></option>
-            <option value="Super Excited">Super Excited</option>
-            <option value="Pretty Good">Pretty Good</option>
-            <option value="Overwhelmed">Overwhelmed</option>
-            <option value="Stressed">Stressed</option>
-            <option value="Sad">Sad</option>
-          </select>
-        </li>
-        <li>
-          <input type="submit" name="submit" class="submit" id ="submit" value="Submit Entry">
-        </li>
-      </ul>
-    </div>
-  </form>
-  
+
+  <div class="background">
+    <ul class="list">
+      <li>
+        <h4>Kelly&apos;s Daily Journal</h4>
+      </li>
+      <li>
+        <label for="journalDate">Date:</label>
+        <input type="date" value="" name="journalDate" id="journalDate">
+      </li>
+      <li>
+        <label for="conceptsCovered">Concepts:</label>
+        <input type="text" class="custom" name="journalConcepts" id="journalConcepts">
+      </li>
+      <li>
+        <label for="conceptDetails">Details:</label>
+        <textarea class="custom" rows="4" cols="40" name="conceptDetails" id="conceptDetails"></textarea>
+      </li>
+      <li><label for="mood">Feelings:</label>
+        <select class="mood custom" name="mood">
+          <option value="no selection"></option>
+          <option value="Super Excited">Super Excited</option>
+          <option value="Pretty Good">Pretty Good</option>
+          <option value="Overwhelmed">Overwhelmed</option>
+          <option value="Stressed">Stressed</option>
+          <option value="Sad">Sad</option>
+        </select>
+      </li>
+      <li>
+        <button class="submit" id="submit">Submit Entry</button>
+      </li>
+    </ul>
+  </div>
   <article id="entryLog"></article>
-  <script src="scripts/data.js"></script>
+
+
+  
+  <!-- <script src="scripts/data.js"></script>
   <script src="scripts/entryComponent.js"></script>
   <script src="scripts/entriesDOM.js"></script>
-  <script src="scripts/journal.js"></script>
+  <script src="scripts/journal.js"></script> -->
+  <script type ="module" src="scripts/journal.js"></script>
 </body>
 
 </html>

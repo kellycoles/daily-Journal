@@ -123,8 +123,8 @@
       "id": 18,
       "date": "07/31/2019",
       "concept": "Individual Reviews",
-      "entry": "Began day in Hackery. We're supposed to be working on a coding project they gave us to do while they do individual reviews, but I'm finishing my LinkedIn profile: it's due Friday. I will start the project later: it's too noisey in here to think! My review was ok, except Steve said that Jenna and Brian said I don't listen to their advice. I don't know what they're talking about, maybe I didn't understand. I'll probably find someone else to help me since they construe my ignorance as defiance. Went back to class after lunch we went over Book 2 Chapter 1",
-      "mood": "Pretty Good"
+      "entry": "Began day in Hackery. We're supposed to be working on a coding project they gave us to do while they do individual reviews, but I'm finishing my LinkedIn profile: it's due Friday. I will start the project later: it's too noisey in here to think! My review was ok, except Steve said that Jenna and Brian said I don't listen to their advice. I don't know what they're talking about, maybe I just didn't understand. Went back to class after lunch we went over Book 2 Chapter 1",
+      "mood": "Sad"
     },
     {
       "date": "2019-08-01",
@@ -139,6 +139,20 @@
       "entry": "The class was better today. ",
       "mood": "Pretty Good",
       "id": 20
+    },
+    {
+      "date": "2019-08-05",
+      "concept": "ES6 Modules",
+      "entry": "Today we learned about exporting and importing things we need to male the modules work. Get rid of script tags and import",
+      "mood": "Pretty Good",
+      "id": 21
+    },
+    {
+      "date": "2019-08-07",
+      "concept": "fixing refresh",
+      "entry": "I hope this works",
+      "mood": "Pretty Good",
+      "id": 22
     }
   ]
 }

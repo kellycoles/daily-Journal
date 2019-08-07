@@ -1,12 +1,7 @@
 // This is like dom.js
+import htmlRep from "./entryComponent.js"
 
-// Reference DOM elements
-const journalDateInput= document.querySelector("#journalDate")
-const journalConceptInput = document.querySelector("#journalConcepts")
-const conceptEntryInput = document.querySelector("#conceptDetails")
-const moodInput = document.querySelector(".mood")
 const entryLogOutput = document.querySelector("#entryLog")
-const submit = document.querySelector("#submit")
 
 const journalEntry = {
     sendToFactory(parsedEntries) {
@@ -16,3 +11,4 @@ const journalEntry = {
         }
     }
 }
+export default journalEntry
