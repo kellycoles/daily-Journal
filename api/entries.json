@@ -146,13 +146,6 @@
       "entry": "Today we learned about exporting and importing things we need to male the modules work. Get rid of script tags and import",
       "mood": "Pretty Good",
       "id": 21
-    },
-    {
-      "date": "2019-08-07",
-      "concept": "fixing refresh",
-      "entry": "I hope this works",
-      "mood": "Pretty Good",
-      "id": 22
     }
   ]
 }

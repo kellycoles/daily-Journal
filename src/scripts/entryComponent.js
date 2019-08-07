@@ -7,10 +7,10 @@ const htmlRep = {
     createJournalHTML(journalEntry)  {
         return `
         <section class="journalEntry">
-        <h3 class = "date">Date: ${journalEntry.date}</h3>
-        <p class = "concept">Concepts Covered: ${journalEntry.concept}</p>
-        <p class = "entry">Journal Entry: ${journalEntry.entry}</p>
-        <p class = "mood">Mood: ${journalEntry.mood}</p>
+        <h3 class = "date">${journalEntry.date}</h3>
+        <p class = "concept">${journalEntry.concept}</p>
+        <p class = "entry">${journalEntry.entry}</p>
+        <p class = "mood">${journalEntry.mood}</p>
         </section>
     `
     }
