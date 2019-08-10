@@ -5,8 +5,7 @@ const entryLogOutput = document.querySelector("#entryLog")
 
 const journalEntry = {
     sendToFactory(parsedEntries) {
-        console.log('parsedEntries: ', parsedEntries);
-        for (const journalEntry of parsedEntries) {
+            for (const journalEntry of parsedEntries) {
             const journalEntryHTML = htmlRep.createJournalHTML(journalEntry)
             entryLogOutput.innerHTML += journalEntryHTML
         }

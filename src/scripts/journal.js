@@ -18,6 +18,8 @@ const conceptEntryInput = document.querySelector("#conceptDetails")
 const moodInput = document.querySelector(".mood")
 const submit = document.querySelector("#submit")
 const radioButton = document.querySelector(".radioButtons")
+console.log('radioButton: ', radioButton);
+
 
 //Do something with entries
 const getAndRender = () => {
@@ -60,15 +62,18 @@ submit.addEventListener("click", (event) => {
 
 
 radioButton.addEventListener("click", (event) => {
-    if (event.target.className == "radioButton--item") {
         const mood = event.target.value
-        console.log(mood)
-        entryLogOutput.innerHTML = ""
-        API.filterJournalEntries(mood).then((parsedEntries) => {journalEntry.sendToFactory(parsedEntries)})
+        
+        if(mood !== "allMoods"){
+            console.log('mood: ', mood);
+            entryLogOutput.innerHTML = ""
+            API.filterJournalEntries(mood)
+            .then((parsedEntries) => { journalEntry.sendToFactory(parsedEntries) })
+        } else {
 
-
-    }
-
+           getAndRender() 
+        }         
+    
 })
 
 
