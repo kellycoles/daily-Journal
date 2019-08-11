@@ -8,13 +8,6 @@
       "mood": "excited"
     },
     {
-      "id": 2,
-      "date": "07/12/2019",
-      "concept": " querySelector() and querySelectorAll()",
-      "entry": "book 2 chapter 1: Practiced using querySelector() and querySelectorAll() to add and remove classes from the DOM",
-      "mood": "ok"
-    },
-    {
       "id": 3,
       "date": "07/12/2019",
       "concept": "object and array manipulation",
@@ -127,32 +120,11 @@
       "mood": "stresed"
     },
     {
-      "date": "2019-08-01",
-      "concept": "Factory Functions",
-      "entry": "Class was confusing",
-      "mood": "stresed",
-      "id": 19
-    },
-    {
-      "date": "2019-08-02",
-      "concept": "Array Methods",
-      "entry": "The class was better today. ",
-      "mood": "ok",
-      "id": 20
-    },
-    {
       "date": "2019-08-05",
       "concept": "ES6 Modules",
       "entry": "Today we learned about exporting and importing things we need to male the modules work. Get rid of script tags and import",
       "mood": "ok",
       "id": 21
-    },
-    {
-      "date": "2019-08-10",
-      "concept": "",
-      "entry": "",
-      "mood": "no selection",
-      "id": 22
     }
   ]
 }

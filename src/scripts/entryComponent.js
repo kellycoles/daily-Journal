@@ -11,7 +11,7 @@ const htmlRep = {
         <p class = "concept">Concepts Covered: ${journalEntry.concept}</p>
         <p class = "entry">Journal Entry: ${journalEntry.entry}</p>
         <p class = "mood">Mood: ${journalEntry.mood}</p>
-        <button class = deleteBtn id="deleteBtn--${journalEntry.id}">
+        <button class = deleteBtn id="deleteBtnId--${journalEntry.id}">
         Delete Journal Entry
     </button>
         </section>

@@ -17,8 +17,8 @@ const journalConceptInput = document.querySelector("#journalConcepts")
 const conceptEntryInput = document.querySelector("#conceptDetails")
 const moodInput = document.querySelector(".mood")
 const submit = document.querySelector("#submit")
-const radioButton = document.querySelector(".radioButtons")
-console.log('radioButton: ', radioButton);
+const radioButtons = document.querySelector("#radioButtons")
+console.log('radioButton: ', radioButtons);
 
 
 //Do something with entries
@@ -61,19 +61,25 @@ submit.addEventListener("click", (event) => {
 })
 
 
-radioButton.addEventListener("click", (event) => {
-        const mood = event.target.value
-        
-        if(mood !== "allMoods"){
-            console.log('mood: ', mood);
-            entryLogOutput.innerHTML = ""
-            API.filterJournalEntries(mood)
+radioButtons.addEventListener("click", (event) => {
+    const mood = event.target.value
+    let total = 0;
+    if (mood !== "allMoods") {
+        console.log('mood: ', mood);
+        entryLogOutput.innerHTML = ""
+        API.filterJournalEntries(mood)
             .then((parsedEntries) => { journalEntry.sendToFactory(parsedEntries) })
-        } else {
+    } else {
 
-           getAndRender() 
-        }         
-    
+        getAndRender()
+    }
+
 })
-
+entryLog.addEventListener("click", () => {
+    if (event.target.id.startsWith("deleteBtnId")) {
+        const deleteBtnId = event.target.id.split("--")[1]
+        API.deleteJournalEntry(deleteBtnId)
+            .then(getAndRender())
+    }
+})
 

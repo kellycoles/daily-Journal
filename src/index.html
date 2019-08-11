@@ -11,7 +11,7 @@
   <title>Kelly&apos;s Journal</title>
 </head>
 
-<body>
+<body id="top">
 
   <div class="background">
     <ul class="list">
@@ -38,27 +38,31 @@
           <option value="stressed">Stressed</option>
         </select>
       </li>
-      <li class="radioButtons">Filter JournalEntries by mood:</br>
-          <input type="radio" class="radioButton--item" id="mood-1" name="myMood" value="Excited">
-          <label for="mood-1">Excited</label>
-    
-          <input type="radio" class="radioButton--item" id="mood-2" name="myMood" value="OK">
-          <label for="mood-2">OK</label>
-    
-          <input type="radio" class="radioButton--item" id="mood-3" name="myMood" value="stressed">
-          <label for="mood-3">Stressed</label>
 
-          <input type="radio" class="radioButton--item" id="mood-4" name="myMood" value="allMoods">
-          <label for="mood-4">All Moods</label>
-      </li>
       <li>
         <button class="submit" id="submit">Submit Entry</button>
+      </li>
+    </ul>
+    <ul class="list">
+      <li class="bold">See Journal Entries by mood:</li>
+      <li id = "radioButtons">
+        <input type="radio" class="radioButton--item" id="mood-1" name="myMood" value="Excited">
+        <label for="mood-1">Excited</label>
+
+        <input type="radio" class="radioButton--item" id="mood-2" name="myMood" value="OK">
+        <label for="mood-2">OK</label>
+
+        <input type="radio" class="radioButton--item" id="mood-3" name="myMood" value="stressed">
+        <label for="mood-3">Stressed</label>
+
+        <input type="radio" class="radioButton--item" id="mood-4" name="myMood" value="allMoods" checked>
+        <label for="mood-4">All Moods</label>
       </li>
     </ul>
   </div>
 
   <article id="entryLog"></article>
-
+  <footer><span>&copy;2019 Kelly Coles</span><a href="#top" class="top-link">Back to top &raquo;</a></footer>
   <script type="module" src="scripts/journal.js"></script>
 </body>
 
