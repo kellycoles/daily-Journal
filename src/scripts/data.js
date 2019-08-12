@@ -25,6 +25,7 @@ const API = {
     },
 
   filterJournalEntries(mood) {
+    console.log(`http://localhost:3000/entries?mood=${mood}`);
     return fetch(`http://localhost:3000/entries?mood=${mood}`)
     .then(entries => entries.json())
   },

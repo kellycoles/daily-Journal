@@ -69,9 +69,11 @@ radioButtons.addEventListener("click", (event) => {
         entryLogOutput.innerHTML = ""
         API.filterJournalEntries(mood)
             .then((parsedEntries) => { journalEntry.sendToFactory(parsedEntries) })
+
     } else {
 
         getAndRender()
+
     }
 
 })
@@ -79,7 +81,7 @@ entryLog.addEventListener("click", () => {
     if (event.target.id.startsWith("deleteBtnId")) {
         const deleteBtnId = event.target.id.split("--")[1]
         API.deleteJournalEntry(deleteBtnId)
-            .then(getAndRender())
+            .then(getAndRender)
     }
 })
 
