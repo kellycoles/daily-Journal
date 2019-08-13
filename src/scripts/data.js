@@ -37,9 +37,19 @@ const API = {
         "Content-Type": "application/json"
       }
     })
-  }
-}
- 
-    
+  },
+  editJournal(entry) {
+      return fetch(`http://localhost:8088/entries/${entry.id}`, {
+          "method": "PUT",
+          "headers": {
+              "Content-Type": "application/json"
+          },
+          "body": JSON.stringify(entry)
+      })
+          .then(response => response.json())
 
-export default API;
+  }
+ 
+}  
+
+export default API

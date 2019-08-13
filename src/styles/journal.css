@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.background {
+.form {
   padding-top: 5px;
   height: 800px;
   background: linear-gradient(0deg, #f4f6f5, transparent), url('../images/desk2.jpg') no-repeat center;
@@ -188,12 +188,17 @@ label {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  width: 50%;
+  width: 30%;
   border-radius: 10px;
  
 }
 
-.submit:hover, .deleteBtn:hover {
+.btnParent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.editBtn:hover,.submit:hover, .deleteBtn:hover {
   cursor: pointer;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
 }

@@ -11,7 +11,7 @@ document.querySelector("#journalDate").valueAsDate = new Date();
 
 // Reference DOM elements
 const entryLogOutput = document.querySelector("#entryLog")
-
+const hiddenJournalEntryId= document.querySelector("#journalEntryId")
 const journalDateInput = document.querySelector("#journalDate")
 const journalConceptInput = document.querySelector("#journalConcepts")
 const conceptEntryInput = document.querySelector("#conceptDetails")
@@ -47,7 +47,7 @@ submit.addEventListener("click", (event) => {
         alert("Fill out the journal, Kelly")
         event.preventDefault();
     }
-
+    // if(hiddenJournalEntryId !== "")
     // call createEntryObject and send it the form data. It will make a new object with the current form data. 
     const newJournalEntry = createEntryObject(journalDateInput.value, journalConceptInput.value, conceptEntryInput.value, moodInput.value)
     //call the API method saveJournalEntries from data.js and pass it the new entry.
@@ -77,11 +77,17 @@ radioButtons.addEventListener("click", (event) => {
     }
 
 })
-entryLog.addEventListener("click", () => {
+entryLogOutput.addEventListener("click", () => {
     if (event.target.id.startsWith("deleteBtnId")) {
         const deleteBtnId = event.target.id.split("--")[1]
         API.deleteJournalEntry(deleteBtnId)
             .then(getAndRender)
     }
+    if (event.target.id.startsWith("editBtnId ")) {
+        const editBtnId = event.target.id.split("--")[1]
+        updateFormFields(editBtnId)
+    }
 })
 
+
+// export default entryLogOutput
