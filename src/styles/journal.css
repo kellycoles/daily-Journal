@@ -193,9 +193,10 @@ label {
  
 }
 
+/* position delete and edit btns */
 .btnParent{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .editBtn:hover,.submit:hover, .deleteBtn:hover {
@@ -206,7 +207,6 @@ label {
 footer {
   display: flex;
   justify-content: space-between;
-
   background: linear-gradient(0deg, #808080, transparent 90%);
   height: 100px;
   width: 100%;

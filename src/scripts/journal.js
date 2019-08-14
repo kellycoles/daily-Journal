@@ -11,7 +11,7 @@ document.querySelector("#journalDate").valueAsDate = new Date();
 
 // Reference DOM elements
 const entryLogOutput = document.querySelector("#entryLog")
-const hiddenJournalEntryId= document.querySelector("#journalEntryId")
+const hiddenJournalEntryId = document.querySelector("#journalEntryId")
 const journalDateInput = document.querySelector("#journalDate")
 const journalConceptInput = document.querySelector("#journalConcepts")
 const conceptEntryInput = document.querySelector("#conceptDetails")
@@ -41,23 +41,33 @@ const createEntryObject = (date, concepts, entry, mood) => {
 
 }
 
+
 submit.addEventListener("click", (event) => {
     // Check for empty string
     if (journalConceptInput.value === "" || conceptEntryInput.value === "" || moodInput.value === "") {
         alert("Fill out the journal, Kelly")
-        event.preventDefault();
+    } else {
+        if (hiddenJournalEntryId !== "") {
+            const entry = {
+                id: entry.hiddenRecipeId.value,
+                date: entry.journalDateInput,
+                concept: entry.journalConceptInput,
+                entry: entry.conceptEntryInput,
+                mood: entry.moodInput
+            }
+            API.editJournal(entry).then(getAndRender)
+        } else {
+        // call createEntryObject and send it the form data. It will make a new object with the current form data. 
+        const newJournalEntry = createEntryObject(journalDateInput.value, journalConceptInput.value, conceptEntryInput.value, moodInput.value)
+        //call the API method saveJournalEntries from data.js and pass it the new entry.
+        API.saveJournalEntries(newJournalEntry).then(getAndRender)
+        // Reset all the fields to an empty string. Set date to current date
+        journalDateInput.valueAsDate = new Date();
+        journalConceptInput.value = ""
+        conceptEntryInput.value = ""
+        moodInput.value = ""
+        }
     }
-    // if(hiddenJournalEntryId !== "")
-    // call createEntryObject and send it the form data. It will make a new object with the current form data. 
-    const newJournalEntry = createEntryObject(journalDateInput.value, journalConceptInput.value, conceptEntryInput.value, moodInput.value)
-    //call the API method saveJournalEntries from data.js and pass it the new entry.
-    API.saveJournalEntries(newJournalEntry).then(getAndRender)
-    // Reset all the fields to an empty string. Set date to current date
-    journalDateInput.valueAsDate = new Date();
-    journalConceptInput.value = ""
-    conceptEntryInput.value = ""
-    moodInput.value = ""
-
 })
 
 
@@ -85,9 +95,9 @@ entryLogOutput.addEventListener("click", () => {
     }
     if (event.target.id.startsWith("editBtnId ")) {
         const editBtnId = event.target.id.split("--")[1]
-        updateFormFields(editBtnId)
+        journalEntry.updateFormFields(editBtnId)
     }
 })
 
 
-// export default entryLogOutput
+ export default {entryLogOutput,journalDateInput, journalConceptInput, conceptEntryInput,moodInput}
