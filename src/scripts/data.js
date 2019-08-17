@@ -9,7 +9,7 @@
 
 const API = {
     getJournalData() {
-        return fetch("http://localhost:3000/entries?_sort=id&_order=desc") // Fetch from the API
+        return fetch("http://localhost:3000/entries?_sort=date&_order=desc") // Fetch from the API
             .then(response => response.json())        // Parse as JSON
 
     },
@@ -39,7 +39,7 @@ const API = {
     })
   },
   editJournal(entry) {
-      return fetch(`http://localhost:8088/entries/${entry.id}`, {
+      return fetch(`http://localhost:3000/entries/${entry.id}`, {
           "method": "PUT",
           "headers": {
               "Content-Type": "application/json"

@@ -100,7 +100,7 @@
     },
     {
       "id": 16,
-      "date": "07/29/2019",
+      "date": "",
       "concept": "Group Project",
       "entry": "Welcome to Nashville project. Still working on group project. Decided to use a different API and successfully finished my part of the project",
       "mood": "ok"
@@ -120,11 +120,25 @@
       "mood": "stresed"
     },
     {
+      "id": 21,
       "date": "2019-08-05",
       "concept": "ES6 Modules",
-      "entry": "Today we learned about exporting and importing things we need to male the modules work. Get rid of script tags and import",
-      "mood": "ok",
-      "id": 21
+      "entry": "Today we learned about exporting and importing things we need to make the modules work. Get rid of script tags and import",
+      "mood": "ok"
+    },
+    {
+      "date": "2019-08-15",
+      "concept": "Nutshell",
+      "entry": "Began the fourth group project, Nutshell. It uses everything we have learned so far. I  can't believe it's only been 6 weeks. I have learned so much!",
+      "mood": "excited",
+      "id": 22
+    },
+    {
+      "date": "2019-08-16",
+      "concept": "Nutshell",
+      "entry": "Day 2  of the group project. I feel pretty good about being able to complete my part of the project.",
+      "mood": "excited",
+      "id": 23
     }
   ]
 }

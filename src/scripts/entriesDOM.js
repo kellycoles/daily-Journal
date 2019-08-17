@@ -4,7 +4,7 @@ import htmlRep from "./entryComponent.js"
 
 
 const journalEntry = {
-    sendToFactory(parsedEntries) {
+    loopThroughData(parsedEntries) {
         console.log('parsedEntries: ', parsedEntries.length);
 // this is where I envoke function to return count. make a container on paper li. make a factory function to return html 
             for (const journalEntry of parsedEntries) {
@@ -13,7 +13,7 @@ const journalEntry = {
         }
     },
     updateFormFields(editBtnId) {
-        fetch(`http://localhost:8088/recipes/${editBtnId}`)
+        fetch(`http://localhost:3000/entries/${editBtnId}`)
         .then(response => response.json())
         .then(entry => {
             /*
@@ -21,7 +21,7 @@ const journalEntry = {
                 an editing form that represents the current
                 state of the resource.
             */
-           domReferences.hiddenJournalEntryId = entry.id // Hidden value. all these values need to be imported frpm journal.js
+           domReferences.hiddenJournalEntryId.value = entry.id // Hidden value.
            domReferences.journalDateInput.value = entry.date 
            domReferences.journalConceptInput.value = entry.concept
            domReferences.conceptEntryInput.value = entry.entry
